@@ -27,7 +27,7 @@ import torch.nn as nn
 #        return out
 
 net = FSRCNN_net(num_channels=1)
-net.load_state_dict(torch.load('./epoch_2000_train_loss_0.001252_test_loss_0.000565_net_params.pkl', map_location='cpu'))
+net.load_state_dict(torch.load('./ckpt/epoch_700_train_loss_0.001260_test_loss_0.000566_net_params.pkl', map_location='cpu'))
 #print(net)
 #scipy.io.savemat('3_9_1_5.mat', mdict={'net':net})
 
@@ -70,4 +70,4 @@ weight['prelu5'] = np.array([])
 for key in weight.keys():
     print(weight[key].shape)
     
-scipy.io.savemat('mine_2000.mat', mdict=weight)
+scipy.io.savemat('./model/weights.mat', mdict=weight)
