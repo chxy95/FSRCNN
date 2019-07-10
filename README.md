@@ -7,6 +7,7 @@ Pytorch 1.0.0
 Some Matlab codes provided by the paper author, url: http://mmlab.ie.cuhk.edu.hk/projects/FSRCNN.html.  
 The main reason for using two languages to do the project is because the different implementation of bicubic interpolation, which causes the broader difference of the results when using PSNR standard. 
 ## Usage
+Use ./data_pro/data_aug.m to do the augmentation.  
 Use ./data_pro/generate_train.m to generate train.h5.  
 Use ./data_pro/generate_test.m to generate test.h5.  
 Train by train.py:
