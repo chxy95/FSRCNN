@@ -6,6 +6,9 @@ Pytorch 1.0.0
 ## Explanation
 Some Matlab codes provided by the paper author, url: http://mmlab.ie.cuhk.edu.hk/projects/FSRCNN.html.  
 The main reason for using two languages to do the project is because the different implementation of bicubic interpolation, which causes the broader difference of the results when using PSNR standard. 
+## Overview
+Overview of the network and Comparison to SRCNN:  
+<img src="https://raw.githubusercontent.com/chxy95/FSRCNN/master/images/Overview.png" width="700"/>
 ## Usage
 Use ./data_pro/data_aug.m to do the augmentation.  
 Use ./data_pro/generate_train.m to generate train.h5.  
